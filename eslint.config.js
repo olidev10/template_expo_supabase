@@ -2,13 +2,13 @@
 import js from "@eslint/js";
 import tsPlugin from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
-const { defineConfig } = require('eslint/config');
-const expoConfig = require('eslint-config-expo/flat');
+import { defineConfig } from "eslint/config";
+import expoConfig from "eslint-config-expo/flat.js";
 
-module.exports = defineConfig([
+export default defineConfig([
   expoConfig,
   {
-    ignores: ['dist/*'],
+    ignores: ["dist/*"],
   },
   {
     files: ["**/*.ts", "**/*.tsx"],
@@ -25,7 +25,6 @@ module.exports = defineConfig([
     rules: {
       ...js.configs.recommended.rules,
       ...tsPlugin.configs.recommended.rules,
-      "react/no-unknown-property": ["error", { ignore: ["className"] }],
     },
   },
 ]);

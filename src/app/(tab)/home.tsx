@@ -20,7 +20,7 @@ export default function HomeScreen() {
     {
       icon: Code2,
       title: "Modern Stack",
-      description: "NativeWind + TypeScript ready",
+      description: "StyleSheet + TypeScript ready",
       accent: colors.secondary,
     },
     {
@@ -34,7 +34,7 @@ export default function HomeScreen() {
   const listElements = [
     { label: "Framework", value: "React Native + Expo" },
     { label: "Language", value: "TypeScript" },
-    { label: "Styling", value: "NativeWind (Tailwind)" },
+    { label: "Styling", value: "React Native StyleSheet" },
     { label: "Backend", value: "Supabase" },
     { label: "Auth", value: "Built-in & Ready" },
   ];
